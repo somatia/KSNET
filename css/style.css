@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'suit';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* reset */
+* { margin: 0; padding: 0; }
+li { list-style: none; }
+a { text-decoration: none; color: inherit; }
+img { vertical-align: top; }
+
+body { font-family: 'suit'; font-size: 16px; }
+.wrap1 { width: 1200px; margin: 0 auto; position: relative; }
+.wrap2 { width: 980px; margin: 0 auto; position: relative; }
+.wrap1:after { content: ""; clear: both; display: block; }
+.wrap2:after { content: ""; clear: both; display: block; }
+ul:after, .cl:after { content: ""; clear: both; display: block; }
+.fl { display: flex; justify-content: center; align-items: center; }
+.fl:after { display: none; }
+.blind { width: 0; height: 0; font-size: 0; overflow: hidden; position: absolute; left: -9999px; }
+
+/* index */
+header { position: absolute; top:0; left: calc(50% - 600px); z-index: 10; border-bottom: 1px solid #ddd; }
+header .wrap1 { background: #fff; }
+header .wrap2 { justify-content: space-between; height: 70px; }
+header .wrap2 li { float:left; font-weight: bold; }
+header .wrap2 li:last-child { margin-right: 70px; }
+header .wrap2 li a:hover, header .wrap2 li a:focus { color: #687ba3; }
+
+#main { background: url(../images/visual.jpg) no-repeat center; height: 600px; }
+#main .wrap2 { padding-top: 230px; }
+#main .wrap2 article { font-size: 40px; }
+#main .wrap2 article strong { margin: 20px 0; display: block; }
+
+#cont { margin: 50px 0 30px; }
+#cont .pay { width: 498px; }
+#cont .pay li { width: 235px; height: 235px; border: 1px solid #ddd; margin-right: 10px; float: left; position: relative; }
+#cont .pay li:nth-child(1) { background: url(../images/pos.jpg) no-repeat right bottom; }
+#cont .pay li:nth-child(2) { background: url(../images/pad.jpg) no-repeat right bottom; }
+#cont .pay li:nth-child(3) { background: url(../images/com.jpg) no-repeat right bottom; width: 482px; margin-top: 10px; }
+#cont .pay li div { position: relative; top: 30px; left: 30px; }
+#cont .pay li div h3 { font-size: 18px; color: #333; }
+#cont .pay li div p { font-size: 14px; color: #666; margin-top: 10px; line-height: 1.4; }
+#cont .pay li a { position: absolute; left: 30px; bottom: 60px; }
+
+#cont article { width: 484px; height: 484px; background: url(../images/tab.jpg) no-repeat center; border: 1px solid #ddd; position: absolute; right: 0; top: 0; }
+#cont article div { width: 235px; height: 235px; background: #687aa2; border-right: 1px solid #ddd; border-bottom: 1px solid #ddd; position:relative; padding-top: 30px; padding-left: 30px; box-sizing: border-box; }
+#cont article div h3 { font-size: 18px; color: #fff; }
+#cont article div p { font-size: 14px; color: #fff; margin-top: 10px; }
+#cont article div a { position: absolute; left: 30px; bottom: 60px; }
+
+#cont .inq { margin-top: 10px; }
+#cont .inq li { float: left; padding: 25px 30px; }
+#cont .inq li:nth-child(1) { background: #f9fafc; width: 491px; border: 1px solid #ddd; box-sizing: border-box; }
+#cont .inq li:nth-child(2) { background: #f9fafc; width: 489px; border: 1px solid #ddd; box-sizing: border-box; border-left: 0; }
+#cont .inq li h3 { color: #7b8c9c; font-size: 16px; }
+#cont .inq li h3:after { content: ""; display: block; width: 270px; height: 1px; background: #ddd; margin: 10px 0 16px; }
+#cont .inq li strong { font-size: 24px; letter-spacing: 1px; color: #333; }
+#cont .inq li strong span { font-weight: normal; font-size: 20px; }
+#cont .inq li>span { color: #666; margin-left: 5px; font-size: 15px; }
+
+footer .snb { padding: 16px 0; font-size: 15px; }
+footer .snb ul li { float: left; margin: 0 12px; color: #666; }
+footer .snb ul li a:hover, footer .snb ul li a:focus { color: #333; font-weight: bold; }
+footer .snb>a { background: #8292a2; color: #fff; position: absolute; right: 0; top: 0; padding: 16px; }
+footer .snb a i { font-style: normal; margin-left: 60px; font-size: 13px; }
+
+footer .wrap1 { border-top: 1px solid #ddd; padding: 16px 0; }
+footer .wrap1 address { font-style: normal; font-size: 12px; color: #666; }
+footer .wrap1 address span { display: block; line-height: 1.6; }
+
+/* card */
+#cardtop { background: url(../images/subV_type1.jpg) no-repeat center; height: 350px; }
+#cardtop .wrap2 { padding-top: 190px; }
+#cardtop .wrap2 strong { font-size: 20px; line-height: 1.6; }
